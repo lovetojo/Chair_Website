@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* navbar */
+ .navbar{
+        width: 100%;
+        background: rgb(219, 214, 218);
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    a{
+        text-decoration: none;
+        
+    }
+    
+    li{
+        list-style-type: none;
+    }
+    
+    .logo{
+        font-size: 32px;
+        font-weight: 700;
+        color: rgb(49, 48, 48);
+    }
+    
+    .navbar ul li{
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        
+    }
+    
+    .navbar ul li a{
+        text-transform: uppercase;
+        color: rgb(87, 82, 87);
+    }
+    
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        position: absolute;
+        background-color: rgb(250, 190, 255);
+        left: 0;
+        bottom:-10px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+    
+/* navbar */
+
+
+/* main content */
+.main-content{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./image/c1.png);
+    background-size: cover;
+    background-position: 70%;
+    
+}
+
+
+/* content */
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+    
+}
+.content h1{
+    font-size: 50px;
+}
+#btn1 button{
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn1 button:hover{
+    background-color: rgb(250, 190, 255);
+}
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+}
+/* content */
+
+/* main content */
+
+/* card1 */
+#btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn2 button:hover{
+    background-color: rgb(250, 190, 255);
+}
+/* card1 */
+
+/* card2 */
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-10px);
+}
+/* card2 */
+
+/* card3 */
+#c p{
+    font-weight: bold;
+}
+#btn3{
+    text-align: center;
+}
+#btn3 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn3 button:hover{
+    background-color: rgb(250, 190, 255);
+}
+@media screen and (max-width:895px){
+    #btn3 button{
+        width: 100px;
+    }
+}
+/* card3 */
+#btn4 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn4 button:hover{
+    background-color: rgb(250, 190, 255);
+}
+/* footer */
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* footer */
